@@ -5,9 +5,23 @@
 
 html,
 body {
+    height: 100vh;
     margin: 0;
-    height: 100%;
-    overflow: hidden
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: lightenBackground 5s forwards;
+    overflow: hidden;
+    filter: brightness(0);
+}
+
+@keyframes lightenBackground {
+    from {
+        filter: brightness(0);
+    }
+    to {
+        filter: brightness(1);
+    }
 }
 
 body {
